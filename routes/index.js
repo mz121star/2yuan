@@ -20,6 +20,10 @@ exports.index = function (req, res) {
 //    res.render('index', { title:'NJBlog.' });
 };
 
+exports.timeline=function(req,res){
+    var html = path.normalize(__dirname + '/../views/'+config.webConfig.dir+'/timeline.html');
+    res.sendfile(html);
+}
 exports.getLoginUser = function (req, res) {
     res.json(req.session["user"] || {});
 };

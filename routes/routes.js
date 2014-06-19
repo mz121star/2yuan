@@ -11,6 +11,7 @@ var user = require('./user');
 var blog = require('./blog');
 module.exports = function (app) {
     app.get('/', index.index);
+    app.get('/timeline',index.timeline);
     app.get('/list', user.list);
     app.get('/blog', blog.list);
     app.get('/user', user.list);

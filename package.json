@@ -8,7 +8,7 @@
     "ejs": "latest",
     "mongoose": "latest",
     "colors": "latest",
-    "mongodb": "latest",
+  /*  "mongodb": "latest",*/
     "connect-mongo": "latest",
     "connect-flash": "latest",
     "requirejs": "latest"
