@@ -1,0 +1,251 @@
+<div id="main" style="min-width:300px!important; max-width:730px!important; margin:auto; overflow:hidden;">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div><img class="top" src="images/tt.jpg" /></div>
+        </div>
+        <div class="swiper-slide">
+            <div><img class="top" src="images/top1.jpg" /></div>
+        </div>
+
+    </div>
+    <div class="pagination"></div>
+</div>
+<script>
+
+    $(function (){
+        var mySwiper = new Swiper('.swiper-container',{
+            loop:true,
+            grabCursor: true,
+            paginationClickable: true,
+            pagination: '.pagination'
+        });
+        var resize = function(e) {
+            var query = $('.swiper-container');
+            var clientW = query[0].clientWidth;
+            query.css('height', clientW*320/730+'px');
+        }
+        $(window).bind('resize', resize);
+        resize();
+        setInterval(function(){
+            mySwiper.swipeNext();
+        }, 5000);
+    });
+
+</script>
+<img class="logo" src="images/logo.jpg" />		<ul class="sub">
+    <li>
+        <a href="#" ><i class="fa fa-home"></i><span>科室简介</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="fa fa-user-md"></i> <span>临床专家</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="fa fa-medkit"></i><span>特色技术</span> </a>
+    </li>
+    <li>
+        <a href="#" ><i class="fa fa-history"></i><span>成长历史</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="fa fa-bullhorn"></i><span>科室公告</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="fa fa-book"></i><span>癫痫知识</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="fa fa-hospital-o"></i><span>在线挂号</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="fa fa-map-marker"></i><span>来院路线</span></a>
+    </li>
+
+</ul>
+<!--		<div class="swiper-containers">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				<div><img class="top" src="images/pk00.jpg" /></div>
+			  </div>
+			  <div class="swiper-slide">
+				<div><img class="top" src="images/pk01.jpg" /></div>
+			  </div>
+			  <div class="swiper-slide">
+				<div><img class="top" src="images/pk02.jpg" /></div>
+			  </div>
+			  <div class="swiper-slide">
+				<div><img class="top" src="images/pk03.jpg" /></div>
+			  </div>
+			</div>
+	    </div>
+		<script>
+			
+			$(function (){
+				var mySwiper1 = new Swiper('.swiper-containers',{
+					  loop:true,
+					  grabCursor: true,
+					  paginationClickable: true
+				  });
+					var resize1 = function(e) {
+						var query = $('.swiper-containers');
+						var clientW = query[0].clientWidth;
+						query.css('height', clientW*342/730+'px');
+					}
+					$(window).bind('resize', resize1);
+					resize1();
+					setInterval(function(){
+						mySwiper1.swipeNext();
+					},5000)
+			});
+			
+		</script>-->
+<div class="swiper-container4">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide red-slide">
+            <div class="li">
+                <img class="doc" src="images/doc00.jpg" />
+                <dl>
+                    <dt>尹剑</dt>
+                    <dd>主任医师,教授,博导 </dd>
+                    <dd>擅长：神经外科常见疾病的临床诊治、癫痫疾病的系统化规范化诊治、癫痫病灶的神经电生理定位、癫痫的外科手术治疗。</dd>
+                </dl>
+                <div class="btn">
+                    <a href="javascript:;" rel="kft"><img class="ask" src="images/btn_ask.jpg" /></a>
+                    <a href="javascript:;" rel="kft"><img class="order" src="images/btn_order.jpg" /></a>
+                </div>
+            </div>
+            <div class="li odd">
+                <img class="doc" src="images/doc01.jpg" />
+                <dl>
+                    <dt>路晴</dt>
+                    <dd>医学硕士 癫痫中心儿科教授 </dd>
+                    <dd>擅长：科研主攻方向为儿童生长发育及中西医结合分子肿瘤学。业务专长：对儿科常见病及各种疑难杂症均有很好的临床经验.</dd>
+                </dl>
+                <div class="btn">
+                    <a href="javascript:;" rel="kft"><img class="ask" src="images/btn_ask.jpg" /></a>
+                    <a href="javascript:;" rel="kft"><img class="order" src="images/btn_order.jpg" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide red-slide">
+            <div class="li">
+                <img class="doc" src="images/doc02.jpg" />
+                <dl>
+                    <dt>王晓飞</dt>
+                    <dd>北京抗癫痫协会副秘书长、常务理事，海淀医院功能神经科主任，北京癫痫沙龙组委会秘书长. </dd>
+                    <dd>擅长：癫痫、帕金森氏症、疼痛、及其它神经系统疾病的诊断与治疗</dd>
+                </dl>
+                <div class="btn">
+                    <a href="../www.zhpingan.com/call/@wap" rel="kft"><img class="ask" src="images/btn_ask.jpg" /></a>
+                    <a href="../www.zhpingan.com/call/@wap" rel="kft"><img class="order" src="images/btn_order.jpg" /></a>
+                </div>
+            </div>
+            <div class="li odd">
+                <img class="doc" src="images/doc03.jpg" />
+                <dl>
+                    <dt>秦炯</dt>
+                    <dd>北京大学第一医院儿科主任、教授、博士生导师  </dd>
+                    <dd>对儿童癫痫的诊治具有极其丰富的经验，对小儿发育异常、癫痫、脑性瘫痪、智力低下等疾病的早期诊断与干预问题颇有建树...</dd>
+                </dl>
+                <div class="btn">
+                    <a href="../www.zhpingan.com/call/@wap" rel="kft"><img class="ask" src="images/btn_ask.jpg" /></a>
+                    <a href="../www.zhpingan.com/call/@wap" rel="kft"><img class="order" src="images/btn_order.jpg" /></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="pagination4"></div>
+</div>
+<script>
+
+    $(function (){
+        var mySwiper4 = new Swiper('.swiper-container4',{
+            //pagination: '.pagination4',
+            loop:true,
+            paginationClickable: true,
+            moveStartThreshold: 100
+        });
+        var resize4 = function(e) {
+            var query4 = $('.swiper-container4');
+            var clientW4 = query4[0].clientWidth;
+            query4.css('height', clientW4*262/730+141+'px');
+
+        }
+        $(window).bind('resize', resize4);
+        resize4();
+        setInterval(function(){
+            mySwiper4.swipeNext();
+        }, 5000);
+    });
+
+</script>
+<div class="tabs"> <a href="javascript:;" class="active">癫痫问题</a> <a href="javascript:;">药物治疗</a> <a href="javascript:;">手术治疗</a></div>
+<div class="swiper-container2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="content-slide">
+                <ul>
+                    <li><a href="#">癫痫患者突然发病要怎么办</a></li>
+                    <li><a href="#">癫痫疾病的临床表现</a></li>
+                    <li><a href="#">癫痫患者的自我保健</a></li>
+                    <li><a href="#">癫痫的心理治疗</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="content-slide">
+                <ul>
+
+                    <li><a href="#">一线抗癫痫药物的耐受性影响其临床效果</a></li>
+                    <li><a href="#">抗癫痫药物和癫痫对子代的影响</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="content-slide">
+                <ul>
+
+                    <li><a href="#">微创新术式治癫痫?</a></li>
+                    <li><a href="a/wt/12.html">治疗癫痫选择保守治疗还是手术</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tabsSwiper = new Swiper('.swiper-container2',{
+        speed:500,
+        onSlideChangeStart: function(){
+            $(".tabs .active").removeClass('active');
+            $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+        }
+    });
+
+</script>
+<div class="bottom">
+    <p class="l">
+        <a href="javascript:;">电脑版</a>
+        <a href="javascript:;">专家团</a>
+        <a href="javascript:;" >在线咨询</a>
+    </p>
+    <p class="p">地址:大连医科大学附属第二医院</p>
+    <p class="p">服务热线:0411-84671291</p>
+    <a href="http://weixin.qq.com/r/s0w8JHrERic5rT5H9xmh" >加关注</a>
+</div>
+<div class="ww">
+    <div class="connect">
+
+        <div class="div01">
+            <div class="w">
+                <a href="#" ><img class="c00" src="images/c00.jpg" /></a>
+                <a href="tel:0411-84671291" ><img class="c01" src="images/c01.jpg" /></a>
+                <a href="tel:0411-84671291"><img class="c02" src="images/c02.jpg" /></a>
+                <a href="tel:0411-84671291"><img class="c02" src="images/c02.jpg" /></a>
+            </div>
+        </div>
+    </div>
+</div>
